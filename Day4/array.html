@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Problems Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Array Problems Demo</h1>
+    <div class="input-section">
+      <input type="text" id="itemInput" placeholder="Enter an item">
+      <button onclick="addItem()">Add Item</button>
+      <button onclick="removeItem()">Remove Last Item</button>
+      <button onclick="filterItems()">Filter Items</button>
+    </div>
+    <ul id="itemList"></ul>
+  </div>
+  <script>
+    // script.js
+let items = ["Apple", "Banana", "Orange"]; // Initial array of items
+
+// Function to display items in the list
+function displayItems() {
+  const itemList = document.getElementById("itemList");
+  itemList.innerHTML = ""; // Clear the list before updating
+
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    itemList.appendChild(li);
+  });
+}
+
+// Function to add an item to the array
+function addItem() {
+  const input = document.getElementById("itemInput");
+  const newItem = input.value.trim();
+
+  if (newItem) {
+    items.push(newItem); // Add the new item to the array
+    input.value = ""; // Clear the input field
+    displayItems(); // Update the list
+  } else {
+    alert("Please enter a valid item!");
+  }
+}
+
+// Function to remove the last item from the array
+function removeItem() {
+  if (items.length > 0) {
+    items.pop(); // Remove the last item
+    displayItems(); // Update the list
+  } else {
+    alert("No items to remove!");
+  }
+}
+
+// Function to filter items in the array
+function filterItems() {
+  const input = document.getElementById("itemInput");
+  const filterText = input.value.trim().toLowerCase();
+
+  if (filterText) {
+    items = items.filter((item) => item.toLowerCase().includes(filterText)); // Filter the array
+    displayItems(); // Update the list
+  } else {
+    alert("Please enter a filter term!");
+  }
+}
+
+// Display initial items when the page loads
+displayItems();
+  </script>
+</body>
+</html>

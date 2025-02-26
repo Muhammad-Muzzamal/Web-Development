@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change Content using JS</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: gray;
+        /* display: inline; */
+        width: 50vw;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 100px;
+      }
+      p {
+        text-align: center;
+        background-color: rgb(190, 184, 184);
+        width: 70vw;
+        margin: auto;
+        padding: 10px;
+        border-radius: 50px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+      .div-btn {
+        display: flex;
+        justify-content: center;
+      }
+      .btn {
+        margin: 20px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 2px solid black;
+        font-size: 20px;
+      }
+      .btn:hover {
+        background-color: rgb(75, 72, 72);
+        color: white;
+      }
+      .fade-in {
+        opacity: 1;
+      }
+      .fade-out {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Project#2</h1>
+    <p class="para">
+      <b>Bofore click button</b>
+      <br />
+      HTML (HyperText Markup Language) is the standard language for creating web
+      pages. It structures content using elements like headings, paragraphs,
+      links, and images. HTML works with CSS for styling and JavaScript for
+      interactivity. It uses tags to define elements, making web development
+      essential for designing and displaying online content effectively.
+    </p>
+    <div class="div-btn">
+      <button class="btn" onclick="changetext()">Click me to know about CSS</button>
+    </div>
+    <script>
+      let paragraph = document.querySelector(".para");
+      let button = document.querySelector(".btn");
+      function changetext() {
+        paragraph.innerHTML =
+          "<b>After Click on Button</b> <br>CSS (Cascading Style Sheets) is used to style and format web pages. It controls layout, colors, fonts, and responsiveness. By applying styles to HTML elements, CSS enhances visual appeal and user experience. It includes selectors, properties, and values, enabling customization. CSS frameworks like Bootstrap simplify design, making websites more attractive and functional.";
+          button.innerHTML="Click me to know about HTML"
+      }
+      
+    </script>
+  </body>
+</html>

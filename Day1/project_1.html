@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project#1</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+        /* opacity:1; */
+        /* transition: opacity 0.5s ease; */
+      }
+      
+      .btn {
+        color: white;
+        background-color: blue;
+        border: none;
+        padding: 10px;
+      }
+      div{
+        display: flex;
+        justify-content: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Project #1</h1>
+    <p>
+      This is my First project using HTML CSS and JavaSript and this represent
+      the change the text by clicking on button
+    </p>
+    <div>
+      <button class="btn" onclick="changetext()">Click me !</button>
+    </div>
+    <script>
+      let button=document.querySelector(".btn");
+      let 
+      function changetext()
+      {
+        button.innerHTML="You Click the Button !";
+        button.style.borderRadius="20px";
+
+      }
+    </script>
+  </body>
+</html>

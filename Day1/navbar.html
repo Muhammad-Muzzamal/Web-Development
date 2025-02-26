@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC nav bar</title>
+    <style>
+        .flex{
+            display: flex;
+        }
+        .nav{
+            /* background-color: black; */
+            gap: 10px;
+            border: 2px solid black;
+            height: 41px;
+        }
+        .icon{
+            list-style-type:none;
+            gap: 10px;
+            /* border: 2px solid black; */
+        }
+        span{
+            background-color: black;
+            width:20px ;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="nav flex">
+        <div class="logo">
+            <span>B</span>
+            <span>B</span>
+            <span>A</span>
+        </div>
+
+        <div class="sign flex">
+            <img src="profile-circle-svgrepo-com.svg" height="30" alt="">
+            <span>Sign in</span>
+        </div>
+
+        <div class="icon flex">
+            <li>News</li>
+            <li>Sport</li>
+            <li>Reel</li>
+            <li>Worklife</li>
+            <li>Travel</li>
+            <li>Future</li>
+            <li class="flex">More <img src="down-circle-svgrepo-com.svg" height="30" alt=""></li>
+        </div>
+
+        <div class="flex">
+            <div class="flex">
+                <div>Search</div>
+                <img src="search-alt-1-svgrepo-com.svg" height="30" alt="">
+            </div>
+        </div>
+
+    </nav>
+</body>
+</html>

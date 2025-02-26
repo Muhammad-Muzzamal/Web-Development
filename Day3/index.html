@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions in of JS</title>
+  </head>
+  <body>
+    <button class="btn" onclick="massage()">Click me</button>
+    <p class="massage"></p>
+    <script>
+      let button = document.querySelector(".btn");
+      let para = document.querySelector(".massage");
+      function massage() {
+        para.innerHTML = "Hello! You clicked the button. 🎉";
+      }
+    </script>
+  </body>
+</html>
