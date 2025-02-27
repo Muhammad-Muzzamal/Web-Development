@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nav Bar</title>
+    <style>
+        .nav{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            background-color: blueviolet;
+            padding: 10px;
+            color: white;
+            padding-right: 20px;
+            border-radius: 100px;
+        }
+        .logo{
+            font-size: larger;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+        }
+        .list{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            cursor: pointer;
+        }
+        img{
+            border-radius: 100px;
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <nav class="nav">
+        
+        <div class="logo">
+            <div class="img"><img src="profile photo.jpg" height="70" alt=""></div>
+            Muhammad Muzzamal
+        </div>
+        <ul class="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Premium</li>
+            <li>Login</li>
+        </ul>
+    </nav>
 </body>
 </html>
