@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+
+<body>
+    <div class="box1">I am box 1</div>
+    <buttom class="btn">Hello</buttom>
+    <script>
+        let box1 = document.querySelector(".box1");
+        box1.style.backgroundColor = "red";
+        box1.style.color = "black";
+        box1.style.width = "100px";
+        let newdiv = document.createElement('div');
+        newdiv.textContent = 'hello world';
+        document.body.appendChild(newdiv);
+        let button = document.querySelector('.btn');
+        button.addEventListener('click', () => { alert("hello World"); });
+
+    </script>
+</body>
+
+</html>
