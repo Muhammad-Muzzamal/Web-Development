@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(179, 179, 243);
+        }
+
+        .home {
+            display: grid;
+            grid-template-areas: "nav nav nav "
+                "sidebar body body "
+                "footer footer footer";
+
+        }
+
+        .nav {
+            display: flex;
+            /* border: 2px solid black; */
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(81, 81, 175);
+            grid-area: nav;
+            position: sticky;
+            top: 0px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+            margin-right: 20px;
+        }
+
+        .img {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .img>img {
+            border-radius: 0px 100% 100% 0px;
+            box-shadow: 10px 0px 10px rgb(120, 120, 190);
+        }
+
+        .img>h3 {
+            color: white;
+            font-size: xx-large;
+        }
+
+        .list {
+            list-style-type: none;
+            display: flex;
+            gap: 5vw;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .btn {
+            background-color: navy;
+            border: 2px solid white;
+            height: 40px;
+            width: 70px;
+            color: white;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            /* justify-content: center; */
+            gap: 10px ;
+            background-color: rgb(54, 54, 134);
+            
+        }
+        .sidebar>div{
+            /* border: 2px solid white; */
+            border-radius: 100px 20px 20px 100px;
+            padding-left: 100px;
+            padding: 10px;
+            background-color: rgba(211, 211, 216, 0.637);
+            margin-right: 2px;
+        }
+        .sidebar :first-child{
+            margin-top: 20px ;
+        }
+        .sidebar :last-child{
+            margin-bottom: 20px ;
+        }
+        footer{
+            grid-area: footer;
+            position: fixed;
+            bottom: 0px;
+            background-color: rgb(42, 42, 136);
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+    
+        }
+        .main{
+            padding-left: 10px ;
+            overflow-y:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <!-- nav bar  -->
+        <div class="nav">
+            <div class="img">
+                <img src="profile photo.jpg" height="100px" alt="">
+                <h3>Muzzamal</h3>
+            </div>
+            <div class="options">
+                <ul class="list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div>Introduction</div>
+            <div>Education</div>
+            <div>Acheivements</div>
+            <div>Hoobies</div>
+            <div>Social Links</div>
+            <div>Interships History</div>
+        </div>
+        <section class="main">
+            <div class="intro">
+                <h1>Muhammad Muzzamal</h1>
+                <p>My name is Muhammad Muzammil, and I am a passionate learner with a deep interest in technology, programming, and problem-solving. الحمدللہ, I have always been curious about how things work, which led me to pursue a Bachelor's in Information Technology. My goal is to become a skilled software engineer, and I am constantly working on improving my programming skills, especially in C++, Python, and JavaScript. I enjoy working on projects that challenge me to think critically and apply my knowledge creatively. ماشاءاللہ, my journey in programming started with C++, and I have since explored various topics, including Object-Oriented Programming (OOP), Data Structures, and Algorithms. Recently, I have dedicated 30 days to mastering C++ through in-depth learning and hands-on projects. I am also interested in web development, where I have worked with HTML and CSS to design simple websites. Additionally, I am keen on learning JavaScript to enhance my front-end development skills. Apart from programming, I have a strong passion for mathematics and physics. I enjoy solving complex problems and applying mathematical concepts to real-world scenarios. My academic interests also extend to courses like Digital Logic Circuits, Discrete Mathematics, Graph Theory, and Introduction to Economics. I am currently learning about decoders in Digital Logic Circuits, a topic that is entirely new to me. Alongside my academic pursuits, I am also involved in freelancing, where I have gained about two years of experience working on different platforms. My freelancing journey has taught me valuable skills in communication, project management, and client handling. In addition to my technical skills, I am deeply interested in creative expression, particularly through poetry. I run a YouTube channel where I upload Shorts featuring deep and meaningful poetry written on the screen. My poetry mainly focuses on Urdu literature, two-line poetry, and background music to create an emotional impact. Unfortunately, I recently went through a breakup, and it has left me feeling quite sad. However, I channel my emotions into my poetry, using it as a means of self-expression and healing. I believe that every experience, whether good or bad, contributes to personal growth. الحمدللہ, I try to stay strong and focus on my goals despite the challenges I face. My academic journey has also introduced me to courses like Introduction to Psychology, which helps me understand human behavior and emotions better. I enjoy learning about different subjects, and I believe that knowledge from diverse fields enhances my overall understanding of the world. My coursework in Communication and Presentation Skills has improved my ability to convey ideas effectively, whether in group discussions, business meetings, or public speaking engagements. I also have a keen interest in game development and have explored Pygame for creating simple games. One of my projects involved drawing a car using Pygame instead of using a PNG image, which was an exciting learning experience. Looking ahead, I plan to work on more advanced game development projects and expand my expertise in the field. Additionally, I am working on my final project related to Telnet, where I need to understand the complete details and configuration steps. Throughout my learning journey, I strive to maintain a balance between my academic responsibilities, freelancing work, and creative interests. I strongly believe in continuous improvement and never shy away from challenges. I prefer simple and to-the-point explanations when learning new concepts, as it helps me grasp them quickly. الحمدللہ, I have a disciplined approach to learning and always set specific goals for myself. Whether it's mastering a programming language, designing a website, or understanding a complex mathematical concept, I put in the effort needed to achieve success. My daily routine involves studying, coding, solving problems, and working on creative projects. I also make time for personal reflection and self-improvement. I appreciate decent and refined designs, whether in logos, websites, or any form of digital content. My attention to detail and passion for creativity drive me to produce high-quality work in everything I do. I also enjoy learning about business and entrepreneurship, as I believe these skills are essential for a successful career in the tech industry. الحمدللہ, my freelancing experience has given me insight into client requirements, project deadlines, and professional communication. Over the years, I have developed strong analytical and logical thinking skills, which help me solve problems efficiently. I always look for ways to improve my workflow and optimize my learning process. My approach to life is based on persistence, dedication, and a strong belief in continuous growth. Despite the ups and downs, I remain focused on my long-term goals and work hard to achieve them. ماشاءاللہ, I am grateful for the opportunities I have had so far and look forward to exploring new challenges and experiences in the future. I hope to make a meaningful impact in the field of technology and contribute to innovative solutions that can benefit society. My journey is just beginning, and I am excited about what lies ahead.</p>
+            </div>
+            <div class="edu">
+                <h1>Education:</h1>
+                <p></p>
+            </div>
+        </section>
+        <footer>
+            Contact: ashrafmuzzamal7@gmail.com
+        </footer>
+    </div>
+</body>
+
+</html>
