@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100hv;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            /*height: 50px ;
+            width: 100px;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bolder;
+            font-size: x-large;
+            background: linear-gradient(45deg, red, green);
+            border: none;
+            padding: 10px;
+            border-radius: 100px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 0px 10px green, -5px 0px 10px red;
+            transition: ease 0.3s;
+
+        }
+
+        .btn1 {
+            /*height: 50px ;
+            width: 100px;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bolder;
+            font-size: x-large;
+            background: linear-gradient(45deg, green, red);
+            border: none;
+            padding: 10px;
+            border-radius: 100px;
+        }
+
+        .btn1:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 0px 10px red, -5px 0px 10px green;
+            transition: ease 0.3s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Click me!</button>
+    <script>
+        let button = document.querySelector('.btn');
+        let body = document.querySelector('body');
+        button.addEventListener('dblclick', () => {
+            button.textContent = "yeee! i am clicked";
+            body.style.backgroundColor = '#4f4f';
+            button.style.transform="scale(300px)";
+
+        });
+    </script>
+</body>
+
+</html>

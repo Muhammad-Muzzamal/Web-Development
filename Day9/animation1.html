@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aimation</title>
+    <style>
+        .box1 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(68, 116, 134);
+            border-radius: 50%;
+            animation: move-right 1s ease-in-out infinite;
+        }
+
+        .box2 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(146, 29, 49);
+            border-radius: 50%;
+            animation: move-left 1s ease-in-out infinite;
+
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 2px;
+        }
+
+        @keyframes move-right {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(20px);
+
+            }
+        }
+
+        @keyframes move-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

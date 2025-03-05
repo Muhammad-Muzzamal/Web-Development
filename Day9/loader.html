@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        .box {
+            height: 100px;
+            width: 5px;
+            background-color: red;
+            border-radius: 10px;
+            animation: compress 1s linear infinite;
+        }
+
+        .box1 {
+            height: 100px;
+            width: 5px;
+            border-radius: 10px;
+            background-color: black;
+            animation: compress2 1s linear infinite;
+        }
+
+        .box3 {
+            background-color: black;
+            border-radius: 100px;
+            width: 5px;
+            animation: compress3 1s linear infinite;
+
+        }
+
+        .box4 {
+            height: 100px;
+            width: 5px;
+            background-color: red;
+            animation: compress4 1s linear infinite;
+            border-radius: 100px;
+        }
+
+        @keyframes compress {
+
+            0%,
+            100% {
+                height: 30px;
+            }
+
+            50% {
+                height: 2px;
+            }
+
+        }
+
+        @keyframes compress2 {
+
+            0%,
+            100% {
+                height: 50px;
+
+            }
+
+            50% {
+                height: 2px;
+
+            }
+
+        }
+
+        @keyframes compress3 {
+
+            0%,
+            100% {
+                height: 10px;
+            }
+
+            50% {
+                height: 2px;
+            }
+
+        }
+
+        @keyframes compress4 {
+
+            0%,
+            100% {
+                height: 100px;
+            }
+
+            50% {
+                height: 2px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box3"></div>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box4"></div>
+    <div class="box1"></div>
+    <div class="box"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

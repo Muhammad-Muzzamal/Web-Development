@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e1e;
+            gap: 10px;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 10px solid transparent;
+            border-top: 10px solid rgb(187, 40, 65);
+            border-radius: 50%;
+            animation: rotate 1s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>

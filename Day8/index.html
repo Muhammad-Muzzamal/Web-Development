@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM manipulation</title>
+    <title>DOM</title>
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="box1">I am box 1</div>
-    <buttom class="btn">Hello</buttom>
+    <div class="container"></div>
     <script>
-        let box1 = document.querySelector(".box1");
-        box1.style.backgroundColor = "red";
-        box1.style.color = "black";
-        box1.style.width = "100px";
-        let newdiv = document.createElement('div');
-        newdiv.textContent = 'hello world';
-        document.body.appendChild(newdiv);
-        let button = document.querySelector('.btn');
-        button.addEventListener('click', () => { alert("hello World"); });
+        let box=document.querySelector('.container');
 
+        box.setAttribute("id",'box1');
+        console.log(box.getAttribute("id"));
+
+        box.style.width="100px";
+        box.style.height="100px";
+        box.style.borderColor="red";
+        box.style.backgroundColor="gray";
+        box.style.margin="30px";
+        // box.style.position="fixed";
+        // box.style.top="0px";
+
+        let newBox=document.createElement("div");
+        newBox.textContent="I am new box";
+        box.appendChild(newBox);
+        newBox.style.width="50px";
+        newBox.style.height="50px";
+        newBox.style.backgroundColor="red";
+        newBox.style.display="flex";
+        newBox.style.justifyContent="center";
+        newBox.style.alignItems="center";
+
+        let button=document.createElement('button');
+        button.textContent="Click me !";
+        box.appendChild(button)
+
+        button.addEventListener('click',()=>{
+            alert("You hover the button");
+        });
+        
+
+
+
+
+        
     </script>
 </body>
-
 </html>
