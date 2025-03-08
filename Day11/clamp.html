@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-content {
+            justify-content: center;
+        }
+        .space{
+            justify-content: space-between;
+        }
+
+        .align-item {
+            align-items: center;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        nav {
+            background-color: #27445D;
+            color: #EFE9D5;
+            padding: 2rem;
+            /* box-shadow: 10px 10px 10px  red; */
+        }
+
+        nav>h1 {
+            font-size: 3rem;
+        }
+
+        .main {
+            height: 56rem;
+            background-color: #71BBB2;
+            gap: 20px;
+            
+        }
+
+        .main>h1 {
+            font-size: 3rem;
+            color: #27445D;
+        }
+
+        .main>p {
+            font-size: 2rem;
+            color: #27445D;
+        }
+
+        .main>img {
+            height: 20rem;
+            border-radius: 50%;
+        }
+
+
+        @media (max-width: 480px) {
+            body {
+                background-color: #EFE9D5;
+            }
+            .card1{
+                height:70vw;
+                /* border: 2px solid black; */
+                width: 60vw;
+                border-radius: 10px;
+                /* gap: 20px; */
+                color: #EFE9D5;
+                background-color:#27445D;
+                box-shadow: 0px 0px 10px  #27445D;
+
+            }
+
+            .card1>img{
+                /* border-radius: 50%; */
+                margin-bottom: 30px ;
+                height:40vw;
+                width: 60vw; 
+                object-fit:cover;
+                border-radius:10px 10px 0 0 ;
+
+            }
+            .card1>h1{
+                margin-bottom: 50px; 
+                text-align: center;
+            }
+
+            .edu{
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="flex justify-content align-item">
+        <h1>Muzzamal Dev</h1>
+    </nav>
+    <secction class="main flex justify-content align-item flex-col">
+        <img src="profile photo.jpg" alt="">
+        <h1>Muzzamal DEV</h1>
+        <p>3 year Experiance</p>
+    </secction>
+    <section class="edu flex flex-col align-item">
+
+
+        <div class="card1 flex flex-col space align-item">
+            <img src="profile photo.jpg" height="100" alt="">
+            <h1>Matric <br>Obtained Marks : 1015/1100</h1>
+        </div>
+
+
+        <div class="card1 flex flex-col space align-item">
+            <img src="profile photo.jpg" height="100" alt="">
+            <h1>Matric <br>Obtained Marks : 1015/1100</h1>
+            
+        </div>
+        <div class="card1 flex flex-col space align-item">
+            <img src="profile photo.jpg" height="100" alt="">
+            <h1>Matric <br>Obtained Marks : 1015/1100</h1>
+
+        </div>
+    </section>
+</body>
+
+</html>
