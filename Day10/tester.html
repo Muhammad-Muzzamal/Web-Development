@@ -4,66 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scroll Animation (CSS Only)</title>
     <style>
-        h1 {
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Each section takes the full viewport height */
+            text-align: center;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            /* Initially hidden */
+            transform: translateY(100%);
+            /* Start from the bottom edge */
+            animation: slideUp 1s ease forwards;
         }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 10px;
-            flex-wrap: wrap;
+        /* Apply animation delays to sections */
+        .section:nth-child(1) {
+            animation-delay: 0.5s;
         }
 
-        .box {
-            height: 300px;
-            width: 300px;
-            border: 2px solid black;
-            background-color: red;
-            animation:scrol 1s ease forwards;
-            /* margin: 10px; */
-
+        .section:nth-child(2) {
+            animation-delay: 1s;
         }
 
-        @keyframes scrol {
-            0%{
+        .section:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        .section:nth-child(4) {
+            animation-delay: 2s;
+        }
+
+        /* Keyframes for the slide-up animation */
+        @keyframes slideUp {
+            0% {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(100%);
+                /* Start from the bottom edge */
             }
 
             100% {
                 opacity: 1;
                 transform: translateY(0);
+                /* Move to the center */
             }
         }
     </style>
 </head>
 
 <body>
-    <h1>
-        Scrol Animation
-    </h1>
-    <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+    <section class="section">
+        <h1>Welcome to Scroll Animation</h1>
+    </section>
+    <section class="section">
+        <h2>Section 1</h2>
+        <p>This section will animate as you scroll.</p>
+    </section>
+    <section class="section">
+        <h2>Section 2</h2>
+        <p>This section will also animate as you scroll.</p>
+    </section>
+    <section class="section">
+        <h2>Section 3</h2>
+        <p>Keep scrolling to see more animations!</p>
+    </section>
 </body>
 
 </html>
