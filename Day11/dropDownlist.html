@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down List</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            background-color: gainsboro;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        .btn {
+            border: none;
+            height: 50px;
+            width: 100px;
+            background-color: gray;
+            border-radius: 50px;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        .list {
+            font-size: 1.5rem;
+            display: none;
+            background: #f9f9f9;
+            flex-direction: column;
+            padding: 10px;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            position: absolute;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(54, 50, 50);
+            display: block;
+            padding: 12px 16px ;
+
+        }
+        a:hover{
+            background:  #ddd;
+        }
+
+        .btn:hover .list{
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="head">
+        <button class="btn">Menu</button>
+        <div class="list">
+            <a href="#">Home </a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Pricing</a>
+            <a href="#">sign up</a>
+        </div>
+    </section>
+    <script>
+        const dropdownBtn = document.querySelector('.btn');
+const dropdownContent = document.querySelector('.list');
+
+dropdownBtn.addEventListener('click', () => {
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+    </script>
+</body>
+
+</html>
