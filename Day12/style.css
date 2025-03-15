@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: lato;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+ul li {
+  padding: 12px 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+.down img {
+  width: 10px;
+  filter: invert(1);
+}
+ul img {
+  filter: invert(1);
+}
+.searchbar {
+  width: 20px;
+  filter: invert(1);
+  padding: 12px 20px;
+}
+li:hover {
+  background-color: gray;
+}
+.search:hover {
+  filter: invert(0);
+  background-color: red;
+}
+.home {
+  background-image: url("homeimage.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-family: poppins;
+}
+.brand {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px;
+  /* font-size: 18px; */
+  font-family: poppins;
+}
+.brand h1 {
+  font-weight: 400px;
+}
+.p1 {
+  color: gray;
+  font-style: italic;
+}
+.p2 {
+  text-align:justify;
+  margin: 0 20vw;
+  font-size: 15px;
+}
+.cards {
+  display: flex;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 15px;
+}
+.card1 img {
+  border-radius: 4px;
+  height: 150px;
+  width: 150px;
+}
+.tour {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  font-family: poppins;
+}
+.tour h1 {
+  font-weight: 400;
+}
+.tour p {
+  color: gray;
+  font-style: italic;
+}
+.box {
+  width: 50vw;
+  background-color: white;
+  color: black;
+}
+.box :nth-child(1) {
+  display: flex;
+  gap: 20px;
+}
+.box :nth-child(2) {
+  display: flex;
+  gap: 20px;
+}
+.box :nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+
+}
+.box :nth-child(1) > div {
+  color: white;
+  background-color: red;
+}
+.box :nth-child(2) > div {
+  color: white;
+  background-color: red;
+}
+.box :nth-child(3) > div {
+  color: white;
+  background-color:black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
