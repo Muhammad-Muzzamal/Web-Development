@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+html{
+    font-size: 10px;
+}
+.nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    padding: 10px 30px ;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav>.list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap:50px;
+    align-items: center;
+    color: #1C2900;
+    font-size:25px ;
+
+}
+.list > li:hover{
+    color: #FFFF;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.home{
+    color: white;
+}
+
+.nav>h1{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+
+}
+.shop-now-btn{
+    background-color: #1C2900;
+    color:#FFFFFF ;
+    padding: 16px 25px ;
+    border-radius: 7.2px;
+    cursor: pointer;
+
+}
+.section1{
+    background:linear-gradient(115deg,#90BC79 50%,#9fc58b 50%);
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 10rem;
+}
+.right-side-section1>img{
+    height: 90vh;
+    
+}
+.left-side-section1{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left:3rem;
+}
+.left-side-section1>h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: lighter;
+}
+.child2{
+    font-size: 7.5rem;
+    font-weight: bolder;
+
+}
+.child2 > span{
+    color: #1C2900;
+    font-weight:lighter;
+}
+.child3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+.shop-now-btn1{
+    background-color: #1C2900;
+    color:#FFFFFF ;
+    padding: 16px 25px ;
+    border-radius: 7.2px;
+    width: 13rem;
+    height:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+}
+.buy-now{
+    border: 4px solid #1C2900;
+    width: 13rem;
+    height:3rem;
+    font-size: 2.5rem;
+    padding: 13px 24px ;
+    border-radius: 7.2px;
+    font-size: 2.5rem;
+    color: #1C2900;
+    cursor: pointer;
+}
+.buy-now:hover {
+    background-color: #1C2900;
+    color: white;
+    transition-duration: 0.4s;
+}
+.buttons-in-main{
+    display: flex;
+    gap: 2rem;
+}
+.bg{
+    background: url(assets/bg.png);
+    height: 100vh;
+    position:absolute;
+
+}
+.part1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    width: 100vw;
+}
+.part1> .box1,.box2,.box3{
+    background: linear-gradient(115deg,#90BC79 50%,#9fc58b 50%);
+    height: 20rem;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #9fc58b;
+    margin-top: 60px;
+}
+.part2{
+    height: 100vh;
+    width: 100vw;
+}
+.shop-now-btn2{
+    background-color:#90BC79;
+    color:#FFFFFF ;
+    padding: 16px 25px ;
+    border-radius: 7.2px;
+    width: 13rem;
+    height:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.part2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 100vh;
+    padding: 100px 0px  ;
+}
+
+.info-section2-part2{
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    color: gray;
+    font-weight: bold;
+    width: 50vw;
+}
+
+#para1{
+    font-size: 5rem;
+    font-weight: lighter;
+    color: black;
+}
+
+#healthy-hair{
+    color: #90BC79;
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.deal-section{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(115deg,#90BC79 50%,#9fc58b 50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.deal-section img{
+    height: 90vh;
+}
+.outer-layer-deal-day{
+    background-color: #FFFF;
+    padding: 30px;
+}
+.inner-layer-deal-day{
+    background-color: #FFFF;
+    padding: 40px;
+    border: 4px solid rgba(185, 178, 178, 0.521);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.shop-now{
+    background-color: #90BC79;
+    padding: 16px 30px ;
+    border-radius: 10px ;
+}

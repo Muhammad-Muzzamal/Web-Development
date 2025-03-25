@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User name Generator</title>
+    <style>
+        #result {
+            height: 50px;
+            width: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your name " id="name">
+    <button class="btn">Submit </button>
+    <input type="text" name="age" id="age" placeholder="Enter Your age">
+    <div id="result">ksnflksnflk</div>
+    <script>
+        let name = document.querySelector('#name');
+        let age = document.querySelector('#age');
+        let result = document.querySelector('#result');
+        let button = document.querySelector('.btn');
+        let nameValue = name.value;
+        button.addEventListener('click', () => {
+            button.style.color = 'red';
+        }
+    </script>
+</body>
+
+</html>

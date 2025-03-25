@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 100px;
+            font-weight: bolder;
+            border-bottom: 3px dashed black;
+            color: red;
+        }
+
+        .grade {
+            font-size: 100px;
+            font-weight: bolder;
+            border: 5px dotted black;
+            border-radius: 100px;
+            height: 100px;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grade</h1>
+    <p class="grade"></p>
+    <h2 class="detail"></h2>
+    <script src="script.js">
+        let heading = document.querySelector("h1");
+        let grade = document.querySelector(".grade");
+        let detail = document.querySelector(".detail");
+        let marks = prompt("Enter the Marks:");
+        if (marks < 0 || marks > 100) {
+            console.log("Please Enter the valid marks (0-100)");
+        } else if (marks > 80) {
+            grade.innerHTML = "A";
+            detail.innerHTML = "Congratulate you get the A grade";
+        } else if (marks > 70) {
+            grade.innerHTML = "B";
+            detail.innerHTML = "Congratulate you get the B grade";
+        } else if (marks > 60) {
+            grade.innerHTML = "C";
+            detail.innerHTML = "Your Grade is C. <br> best of luck for the next time ";
+        } else if (marks > 50) {
+            grade.innerHTML = "D";
+            detail.innerHTML =
+                "Your Grade is D. <br>Work Hard <br> best of luck for the next time ";
+        } else {
+            grade.innerHTML = "F";
+            detail.innerHTML = 'Ops! You have Failed <br> Your grade is F';
+
+        }
+
+    </script>
+</body>
+
+</html>
