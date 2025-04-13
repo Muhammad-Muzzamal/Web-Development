@@ -1,0 +1,7 @@
+/* Import Bootstrap */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Your custom styles */
+.custom-class {
+    color: red;
+}
